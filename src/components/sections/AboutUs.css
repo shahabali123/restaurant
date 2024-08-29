@@ -65,7 +65,10 @@
         flex-direction: column;
         gap: 10px;
         border: 2px solid orange;
+        justify-content: center;
+        align-items: center;
         padding: 2px;
+        text-align: center;
         >.image{
             width: 100%;
             >img{
