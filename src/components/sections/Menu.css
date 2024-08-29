@@ -83,11 +83,10 @@
 @media screen and (max-width: 768px){
 .card{
 width: 95%;
-}
-
-.card-image{
+      >.card-image{
                 >img{
                     width: 95%;
                 }
+}
 }
 }
