@@ -1,0 +1,81 @@
+.menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    >.info{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+        align-items: center;
+        >h1{
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        >p{
+           text-align: center;
+           width: 80%;
+           font-size: larger;
+        }
+    }
+
+    >.cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+        
+        >.card{
+            width: 30rem;
+            height: auto;
+            border-radius: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(0, 0, 0);
+            }
+            >.card-image{
+                >img{
+                    width: 30rem;
+                    border-radius: 10px;
+                }
+                
+            }
+            >.card-info{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+            }
+            >.order{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                >p{
+                    font-size: larger;
+                    margin-left: 1rem;
+                }
+                >a{
+                    text-decoration: none;
+                    color: aliceblue;
+                    padding: 12px;
+                    background-color: #4CAF50;
+                    border: none;
+                    border-radius: 8px;
+                    margin: 2px;
+                }
+            }
+        }
+    }
+}

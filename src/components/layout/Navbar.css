@@ -1,0 +1,74 @@
+nav{
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    z-index: 10;
+    background: linear-gradient(#f5e105, #FA709A, #784BA0);
+    padding: 0 1rem 0 1rem;
+    position: fixed;
+}
+
+nav .logo h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+  }
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: x-large;
+    padding: 0;
+    >li a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            background-image: linear-gradient(225deg, #FF3CAC 0%, #f5e105 50%, #2B86C5 100%);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+        }
+    }
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    padding: 8px;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+    &:hover{
+        background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+        transition: ease-in-out 5s;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(#f5e105, #FA709A, #784BA0);
+        height: 8rem;
+    }
+    nav .menu{
+        margin-top: 1.5rem;
+    }
+}
